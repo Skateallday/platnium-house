@@ -1,0 +1,21 @@
+#body{
+    background:#E6E5E3;
+    color:#798699;
+}
+
+.second-theme{
+    background:#999388;
+    color:#fff;
+}
+
+.third-theme{
+    background:#9FB1B3;
+    color:#fff;
+}
+
+#footer{
+    background:#fff;
+}
+#footer a:link{
+    color:#798699;
+}
