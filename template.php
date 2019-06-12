@@ -4,12 +4,14 @@ echo'<!doctype html>
   <head>
     <title>Platinum House Offices</title>      
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Executive Office Spaces">
+    <meta name="keywords" content="Executive, Office, Spaces, Glasgow">
+    <meta name="author" content="Marc Inglis">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-   
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body id="body">
     
 <nav class="navbar navbar-inverse">
     <div class="container">
