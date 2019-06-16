@@ -1,21 +1,118 @@
-#body{
-    background:#E6E5E3;
-    color:#798699;
+h1{
+    color:#000;
+    font-size:48px;
+}
+h2{
+    color:#000;
+    font-size:36px;
+}
+h3{
+    color:#000;
+    font-size:30px;
+}
+h4{
+    color:#000;
+    font-size:28px;
+}
+h5{
+    color:#000;
+    font-size:24px;
 }
 
+p{
+    font-size:20px;
+}
+
+
+
+#body{
+    background:#E6E5E3;
+   
+}
+.first-theme{    
+    background: rgba(0, 0, 0, 0.7); /* Green background with 30% opacity */
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:3s;
+    -moz-animation-duration:3s;
+    animation-duration:3s;
+}
 .second-theme{
     background:#999388;
-    color:#fff;
+    color:#000;
 }
 
 .third-theme{
     background:#9FB1B3;
+    color:#000;
+}
+.heading{
     color:#fff;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    animation-delay: 10s;
+
 }
 
+
+@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+.logo{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:175px;
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 35;
+    animation-delay: 5s;
+}
 #footer{
     background:#fff;
 }
 #footer a:link{
     color:#798699;
+}
+
+.socialLogos{
+    margin:5%;
+}
+
+.office-image{
+    width:100%;
+    height:auto;
+    margin:10%;
+}
+
+.centreText{
+    text-align: center;
+}
+.googleMaps{
+    margin:10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.form-control{
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+.paralax{
+    background-image: url("/images/outsideView.jpg");
+    height:750px;
+     /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:-30px;
 }
