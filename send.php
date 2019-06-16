@@ -12,7 +12,7 @@
          $visitor_name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
 	 }
 	 if(isset($_POST['company'])) {
-		$visitor_name = filter_var($_POST['company'], FILTER_SANITIZE_STRING);
+		$visitor_company = filter_var($_POST['company'], FILTER_SANITIZE_STRING);
 	}
       
     
@@ -21,18 +21,16 @@
          $visitor_email = filter_var($visitor_email, FILTER_VALIDATE_EMAIL);
      } 
       
-     if(isset($_POST['comments'])) {
-        $visitor_message = filter_var($_POST['comments'], FILTER_SANITIZE_STRING);
+     if(isset($_POST['message'])) {
+        $visitor_message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
-     }
+     }    
       
-    
-      
-     $headers  = 'MIME-Version: 1.0' . "\r\n"
-     .'Content-type: text/html; charset=utf-8' . "\r\n"
-     .'From: ' . $visitor_email . "\r\n";
-      
-     if(mail($recipient, $email_title, $visitor_message, $headers)) {
+     $header = "From: noreply@platinumhouse.com\r\n" 
+    . "MIME-Version: 1.0\r\n" .
+    "Content-Type: text/plain; charset=utf-8\r\n" .
+    "X-Priority: 1\r\n"; 
+     if(mail("marcinglis91@hotmail.com", $email_title, $visitor_message, $header)) {
          echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
      } else {
          echo '<p>We are sorry but the email did not go through.</p>';

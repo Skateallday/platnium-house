@@ -27,6 +27,7 @@ p{
 
 #body{
     background:#E6E5E3;
+    color:#798699;
    
 }
 .first-theme{    
@@ -52,6 +53,15 @@ p{
 .third-theme{
     background:#9FB1B3;
     color:#000;
+}
+.heading{
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    animation-delay: 10s;
+
 }
 .heading{
     color:#fff;
