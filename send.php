@@ -6,7 +6,7 @@
      $visitor_email = "";
      $visitor_message = "";
      $email_title ="Message from Platinum House contact form.";
-     $recipient="marcinglis91@hotmail.com";
+     $recipient="office@platinum-house.co.uk";
       
      if(isset($_POST['name'])) {
          $visitor_name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
@@ -30,7 +30,7 @@
     . "MIME-Version: 1.0\r\n" .
     "Content-Type: text/plain; charset=utf-8\r\n" .
     "X-Priority: 1\r\n"; 
-     if(mail("marcinglis91@hotmail.com", $email_title, $visitor_message, $header)) {
+     if(mail($recipient, $email_title, $visitor_message, $header)) {
          echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
      } else {
          echo '<p>We are sorry but the email did not go through.</p>';

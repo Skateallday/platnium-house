@@ -6,14 +6,12 @@
         <div class="socialLogos">
         &copy; Copyright 2019 by <a href="http://www.thedesigndepartment.co.uk/">The Design Department</a></div>
       </div>
-      <div class="col-lg-4">
-          <img src="images/facebook.png" class="socialLogos" alt="facebook Logo">
-          <img src="images/twitter.png" class="socialLogos" alt="twitter Logo">
-          <img src="images/instagram.png" class="socialLogos" alt="instagram Logo">
-          <img src="images/linkedin.png" class="socialLogos" alt="linkedin Logo">
-      </div>
+      
     </div>
   </div>      
 </footer>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </body>
 </html>
